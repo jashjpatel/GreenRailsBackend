@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
+
+
+  private
+
+  def user_params
+    params.require(:user).permit(:email, :password)
+  end
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
@@ -59,4 +66,19 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+
+
+  def create
+    Rails.logger.debug "Received parameters: #{params.inspect}"
+    user = User.new(user_params)
+    if user.save
+      # Success logic
+      print("Success")
+    else
+      Rails.logger.debug "Validation errors: #{user.errors.full_messages}"
+      # Error handling
+      print("Error")
+    end
+  end
+
 end
