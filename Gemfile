@@ -39,8 +39,6 @@ end
 
 group :development, :test do
 
-  gem "capistrano", "~> 3.10", require: false
-  gem "capistrano-bundler", "~> 2.0"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
