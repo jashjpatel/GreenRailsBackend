@@ -97,10 +97,10 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano3-puma (6.0.0.alpha.4)
+    capistrano3-puma (6.0.0.beta.1)
       capistrano (~> 3.7)
       capistrano-bundler
-      puma (>= 5.1, < 6.0)
+      puma (>= 5.1, < 7.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -203,7 +203,7 @@ GEM
     psych (5.1.2)
       stringio
     public_suffix (6.0.1)
-    puma (5.6.9)
+    puma (6.4.3)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.8)
@@ -355,13 +355,13 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rails
   capistrano-rvm
-  capistrano3-puma (= 6.0.0.alpha.4)
+  capistrano3-puma (= 6.0.0.beta.1)
   capybara
   debug
   devise
   devise-jwt
   importmap-rails
-  puma (>= 5.0)
+  puma (~> 6.4.3)
   rack-cors
   rails (~> 7.2.1)
   rubocop-rails-omakase

@@ -5,7 +5,7 @@ gem "rails", "~> 7.2.1"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", ">= 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", ">= 5.0"
+gem "puma", "~> 6.4.3"
 # Add the devise gem
 gem "devise"
 gem "devise-jwt"
@@ -39,7 +39,7 @@ end
 
 group :development do
   gem "capistrano"
-  gem "capistrano3-puma", "6.0.0.alpha.4"
+  gem "capistrano3-puma", "6.0.0.beta.1"
   gem "capistrano-rails", require: false
   gem "capistrano-bundler", require: false
   gem "capistrano-rvm"
