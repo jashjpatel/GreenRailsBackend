@@ -37,3 +37,12 @@ set :repo_url, "git@example.com:me/my_repo.git"
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+
+set :application, "GreenRailsBackend"
+set :repo_url, "https://github.com/jashjpatel/GreenRailsBackend" # Edit this to match your repository
+set :branch, :master #use `git rev-parse --abbrev-ref HEAD`.chomp for pick current branch
+set :deploy_to, "/home/deploy/GreenRailsBackend"
+set :pty, true
+set :linked_files, %w{config/database.yml config/application.yml} #if rails 5.2 & above master.key is used insted of application.yml
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
+set :keep_releases, 5
