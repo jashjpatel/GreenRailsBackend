@@ -59,3 +59,7 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+set :rails_env, 'staging'
+set :puma_env, fetch(:rack_env, fetch(:rails_env, 'staging'))
+server "34.199.52.168", user: 'deploy', roles: %w[web app db]
