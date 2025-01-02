@@ -39,7 +39,7 @@ end
 
 group :development do
   gem "capistrano"
-  gem "capistrano3-puma", "6.0.0.beta.1"
+  gem "capistrano3-puma", "6.0.0"
   gem "capistrano-rails", require: false
   gem "capistrano-bundler", require: false
   gem "capistrano-rvm"
