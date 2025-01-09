@@ -39,7 +39,7 @@ set :repo_url, "git@example.com:me/my_repo.git"
 # set :ssh_options, verify_host_key: :secure
 
 set :application, "GreenRailsBackend"
-set :repo_url, "https://github.com/jashjpatel/GreenRailsBackend" # Edit this to match your repository
+set :repo_url, "git@github.com:jashjpatel/GreenRailsBackend.git" # Edit this to match your repository
 set :branch, :master # use `git rev-parse --abbrev-ref HEAD`.chomp for pick current branch
 set :deploy_to, "/home/deploy/GreenRailsBackend"
 set :pty, true

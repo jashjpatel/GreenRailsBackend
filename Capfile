@@ -5,12 +5,15 @@ require "capistrano/setup"
 require "capistrano/deploy"
 
 require "capistrano/bundler"
+require "capistrano/rails"
+require "capistrano/rbenv"
 require "capistrano/rvm"
 require "capistrano/rails/assets" # for asset handling add
 require "capistrano/rails/migrations" # for running migrations
 require "capistrano/puma"
 install_plugin Capistrano::Puma  # Default puma tasks
-
+set :rbenv_type, :user
+set :rbenv_ruby, "3.2.3"
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"

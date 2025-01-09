@@ -59,3 +59,8 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+# Will create a server to deploy to for production later but for now, the staging server will be the main server being used
+
+server "34.199.52.168", user: "deploy", roles: %w{web app db}
+set :rails_env, "production"
