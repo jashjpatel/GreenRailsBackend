@@ -100,7 +100,7 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano3-puma (6.0.0.beta.1)
+    capistrano3-puma (6.0.0)
       capistrano (~> 3.7)
       capistrano-bundler
       puma (>= 5.1, < 7.0)
@@ -184,7 +184,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     net-ssh (7.3.0)
-    nio4r (2.7.3)
+    nio4r (2.7.4)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.7-arm-linux)
@@ -359,7 +359,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.6)
   capistrano-rbenv (~> 2.2)
   capistrano-rvm
-  capistrano3-puma (= 6.0.0.beta.1)
+  capistrano3-puma (= 6.0.0)
   capybara
   debug
   devise
