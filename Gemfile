@@ -38,12 +38,12 @@ group :test do
 end
 
 group :development do
-  gem "capistrano"
+  gem "capistrano", "~> 3.19", require: false
+  gem "capistrano-rails", "~> 1.6", require: false
+  gem "capistrano-rbenv", "~> 2.2", require: false
   gem "capistrano3-puma", "6.0.0.beta.1"
-  gem "capistrano-rails", require: false
   gem "capistrano-bundler", require: false
   gem "capistrano-rvm"
-  gem "capistrano-rbenv"
 end
 
 group :development, :test do
