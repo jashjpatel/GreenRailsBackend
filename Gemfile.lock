@@ -354,10 +354,10 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman (~> 6.2.2)
-  capistrano
+  capistrano (~> 3.19)
   capistrano-bundler
-  capistrano-rails
-  capistrano-rbenv
+  capistrano-rails (~> 1.6)
+  capistrano-rbenv (~> 2.2)
   capistrano-rvm
   capistrano3-puma (= 6.0.0.beta.1)
   capybara
